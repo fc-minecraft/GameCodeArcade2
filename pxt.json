@@ -6,7 +6,7 @@
         "builder": "*"
     },
     "files": [
-        "1-saveTheArcade/tutorials/1-gettingStarted.md",
+        "1-saveTheArcade/tutorials/1-helloAgent.md",
         "1-saveTheArcade/tutorials/2-events.md",
         "1-saveTheArcade/tutorials/3-sequencing.md",
         "1-saveTheArcade/tutorials/4-repeat.md",
