@@ -37,7 +37,7 @@ Code with a condition can determine whether a specific section of code will run,
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("fix", function () {
     for (let index = 0; index < 13; index++) {
         if (agent.detect(AgentDetection.Block, RIGHT)) {
             agent.destroy(RIGHT)
@@ -50,7 +50,7 @@ player.onChat("run", function () {
 ```
 
 ```template
-player.onChat("run", function () {
+player.onChat("fix", function () {
     for (let index = 0; index < 4; index++) {
         agent.destroy(RIGHT)
         agent.move(FORWARD, 1)

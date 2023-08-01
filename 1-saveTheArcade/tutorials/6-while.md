@@ -47,7 +47,7 @@ A ``||loops:while||`` block uses a condition to determine whether it should cont
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("copy", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) == COBBLESTONE) {
         agent.move(FORWARD, 1)
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
@@ -57,7 +57,7 @@ player.onChat("run", function () {
 ```
 
 ```template
-player.onChat("run", function () {
+player.onChat("copy", function () {
     while (false) {
         agent.move(FORWARD, 1)
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)

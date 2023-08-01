@@ -17,7 +17,7 @@ A ``||loops:repeat||`` block is a **compound statement block**.  A compound stat
 A ``||loops:repeat||`` block fits inside an event block but needs statement blocks inside it.
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("clean", function () {
     for (let index = 0; index < 4; index++) {
     	
     }
@@ -43,7 +43,7 @@ Loops can greatly reduce the amount of code to write to solve a problem.
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("run", function () {
+player.onChat("clean", function () {
     for (let index = 0; index < 13; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -52,7 +52,7 @@ player.onChat("run", function () {
 ```
 
 ```template
-player.onChat("run", function () {
+player.onChat("clean", function () {
     agent.destroy(FORWARD)
     agent.move(FORWARD, 1)
 })
