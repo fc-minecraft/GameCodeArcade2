@@ -10,7 +10,7 @@
 
 Some problems involve performing actions over and over, but other actions are not necessarily repeated consistently.  An ``||logic:if||`` block can simplify code by determining when it is appropriate to perform a certain action.
 
-An ``||logic:if - else||`` block is another type of **compound statement block**.  It uses a **condition** to determine whether to run its code.  If the condition is true, then the code inside the ``||logic:if||`` block will run. If the condition is false, then the code inside the  ``||logic:else||`` block will run.
+An ``||logic:if||`` block is another type of **compound statement block**.  It uses a **condition** to determine whether to run its code.  If the condition is true, then the code inside the ``||logic:if||`` block will run.
 
 #### ~ tutorialhint
 
@@ -20,9 +20,9 @@ A **condition** can be true or false.  **Condition blocks** have a distinct poin
 
 The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
 
-Try using an ``||logic:if - else||`` block and an ``||agent:agent detect||`` block to make the ``||agent:agent destroy||`` only solid blocks. Else, if it doesn't detect a solid block, have the  ``||agent:agent interact||`` with the lever.
+Try using an ``||logic:if||`` block and an ``||agent:agent detect||`` block to make the ``||agent:agent destroy||`` only solid blocks.
 
-Be sure to specify the correct direction in the ``||agent:agent detect||`` and  ``||agent:agent interact||`` blocks. Remember to also set the ``||loops:repeat||`` block to run the correct number of times.
+Be sure to specify the correct direction in the ``||agent:agent detect||`` block. Also, the ``||loops:repeat||`` block is already set to run the correct number of times.
 
 #### ~ tutorialhint
 
@@ -37,12 +37,10 @@ Code with a condition can determine whether a specific section of code will run,
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("fix", function () {
+player.onChat("run", function () {
     for (let index = 0; index < 13; index++) {
         if (agent.detect(AgentDetection.Block, RIGHT)) {
             agent.destroy(RIGHT)
-        } else {
-            agent.interact(RIGHT)
         }
         agent.move(FORWARD, 1)
     }
@@ -50,7 +48,7 @@ player.onChat("fix", function () {
 ```
 
 ```template
-player.onChat("fix", function () {
+player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
         agent.destroy(RIGHT)
         agent.move(FORWARD, 1)
