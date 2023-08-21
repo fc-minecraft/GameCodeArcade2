@@ -30,7 +30,7 @@ player.onChat("interact", function () {
 ```
 
 ```template
-player.onChat("move", function () {
+player.onChat("interact", function () {
     agent.move(FORWARD, 1)
 })
 ```
