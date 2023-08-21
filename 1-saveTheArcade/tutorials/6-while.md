@@ -67,18 +67,12 @@ player.onChat("copy", function () {
 ```
 
 ```ghost
-player.onChat("run", function () {
-    while (agent.inspect(AgentInspection.Block, FORWARD) == GRASS) {
-        agent.interact(FORWARD)
-        agent.setItem(REDSTONE_BLOCK, 1, 1)
+
+player.onChat("copy", function () {
+    while (agent.inspect(AgentInspection.Block, FORWARD) == COBBLESTONE) {
+        agent.move(FORWARD, 1)
+        agent.setItem(agent.inspect(AgentInspection.Block, FORWARD), 1, 1)
         agent.place(FORWARD)
-        agent.turn(LEFT_TURN)
-    }
-    for (let index = 0; index < 4; index++) {
-        if (agent.detect(AgentDetection.Block, FORWARD)) {
-            agent.destroy(RIGHT)
-            agent.move(FORWARD, 1)
-        }
     }
 })
 ```

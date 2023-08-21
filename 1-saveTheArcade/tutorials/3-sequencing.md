@@ -63,10 +63,6 @@ player.onChat("place", function () {
 
 ```ghost
 player.onChat("run", function () {
-    agent.interact(FORWARD)
-    agent.move(FORWARD, 1)
-    agent.destroy(FORWARD)
-    agent.turn(LEFT_TURN)
     agent.setItem(REDSTONE_BLOCK, 1, 1)
     agent.place(FORWARD)
 })

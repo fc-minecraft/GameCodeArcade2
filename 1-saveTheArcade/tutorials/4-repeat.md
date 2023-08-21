@@ -63,10 +63,6 @@ player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
-        agent.interact(FORWARD)
-        agent.setItem(REDSTONE_BLOCK, 1, 1)
-        agent.place(FORWARD)
-        agent.turn(LEFT_TURN)
     }
 })
 ```
