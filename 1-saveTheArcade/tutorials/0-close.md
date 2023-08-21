@@ -8,8 +8,8 @@
 
 ### Close to Continue
 
-Close this Make Code window to continue with the tutorial.
+Close this Make Code window to continue with the tutorial. 
 
 #### ~ tutorialhint
 
-Press the (X) button on the MakeCode window to continue.
+Press the (X) button on the MakeCode window to continue. 
