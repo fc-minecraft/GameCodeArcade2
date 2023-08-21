@@ -49,9 +49,9 @@ A ``||loops:while||`` block uses a condition to determine whether it should cont
 ```blocks
 player.onChat("copy", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) == COBBLESTONE) {
-        agent.move(FORWARD, 1)
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
         agent.place(LEFT)
+        agent.move(FORWARD, 1)
     }
 })
 ```
@@ -59,9 +59,9 @@ player.onChat("copy", function () {
 ```template
 player.onChat("copy", function () {
     while (false) {
-        agent.move(FORWARD, 1)
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
         agent.place(LEFT)
+        agent.move(FORWARD, 1)
     }
 })
 ```
@@ -70,9 +70,9 @@ player.onChat("copy", function () {
 
 player.onChat("copy", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) == COBBLESTONE) {
-        agent.move(FORWARD, 1)
         agent.setItem(agent.inspect(AgentInspection.Block, FORWARD), 1, 1)
         agent.place(FORWARD)
+        agent.move(FORWARD, 1)
     }
 })
 ```
