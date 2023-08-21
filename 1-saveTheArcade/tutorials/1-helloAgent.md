@@ -37,5 +37,5 @@ player.say("Hello, Agent.")
 ```
 
 ```template
-player.say("Your text here")
+player.say("Hello, Agent.")
 ```
