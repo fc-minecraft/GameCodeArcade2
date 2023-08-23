@@ -44,7 +44,7 @@ Loops can greatly reduce the amount of code to write to solve a problem.
 
 ```blocks
 player.onChat("clean", function () {
-    for (let index = 0; index < 13; index++) {
+    for (let index = 0; index < 12; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
     }
