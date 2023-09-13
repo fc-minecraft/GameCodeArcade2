@@ -20,7 +20,7 @@ The shape of an **event block** allows other code blocks to fit inside it.
 
 The ``||player:say||`` block is a **statement block**.  A statement block performs an action.
 
-Try changing the text in the ``||player:say||`` block to "Hello, Agent."  Then press the Play button to run the code.
+The text in the ``||player:say||`` block says "Hello, Agent." Press the Play button to run the code and display the text in chat.
 
 #### ~ tutorialhint
 

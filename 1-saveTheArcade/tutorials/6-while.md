@@ -8,7 +8,7 @@
 
 ### Conditional looping
 
-For some problems involving a loop, a ``||loops:repeat block||`` is not appropriate because counting the number of times to repeat is infeasible.
+For some problems involving a loop, a ``||loops:repeat block||`` is not the best option. We may need to check to determine whether or not the code should repeat again before continuing. 
 
 A ``||loops:while||`` block is another type of loop that uses a condition to determine whether it should repeatedly loop through its code.
 
@@ -18,8 +18,7 @@ A ``||loops:while||`` block runs its code while the condition is true.  After ru
 
 ### Agent inspect
 
-The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is whatever Minecraft block is next to the agent.
-
+The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is the type of Minecraft block next to the agent.
 Value blocks fit in the rounded bubbles of other code blocks where a value is expected, such as the drop-down menu in ``||agent:agent set block or item||``.
 
 #### ~ tutorialhint
@@ -29,8 +28,7 @@ The placement of ``||agent:agent inspect||`` in ``||agent:agent set block or ite
 ### Comparing values
 
 The ``||logic:LOGIC||`` category has a condition block that allows for the ``||logic:comparison||`` of two values.  With the **equal sign (=)** selected, the ``||logic:comparison||`` block returns true if the two values are the same.
-
-Try to use a ``||logic:comparison||`` block to make a condition for the ``||loops:while||`` block.  The agent needs to continue its task ``||loops:while||`` ``||agent:agent detect||`` **down** is equal to **cobblestone**.
+Try to use a ``||logic:comparison||`` block to make a condition for the ``||loops:while||`` block.  The agent needs to continue its task ``||loops:while||`` ``||agent:agent inspect||`` **down** is equal to **cobblestone**.
 
 #### ~ tutorialhint
 
@@ -39,7 +37,6 @@ Use a ``||blocks:block value||`` from the ``||blocks:BLOCKS||`` category to comp
 ### Review
 
 A ``||loops:while||`` block uses a condition to determine whether it should continue to loop through its code.
-
 ``||loops:While||`` loops are useful when the number of times to repeat is unclear but a condition for repeating is apparent.
 
 ``||logic:Comparison||`` blocks can compare two values to create a condition.
