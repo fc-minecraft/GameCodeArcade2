@@ -8,9 +8,9 @@
 
 ### Sequencing
 
-Multiple actions within a ``||player:on chat command||`` can be used to make the agent do different things in sequence. The agent has several different capabilities, which can be performed in different directions via the drop-down menu.
+Multiple actions within an ``||player:on chat command||`` can be used to make the agent do different things in sequence. The agent has several different capabilities, which can be customized via the drop-down menu.
 
-We already have a ``||player:on chat command||`` named **interact** with an ``||agent:agent move||`` block inside, but we also need the agent to interact with the lever. 
+We already have an ``||player:on chat command||`` named **interact** with an ``||agent:agent move||`` block inside, but we also need the agent to interact with the lever. 
 
 #### ~ tutorialhint
 
@@ -18,9 +18,9 @@ Press **next** to continue tutorial
 
 ### Agent interact
 
-The ``||agent:agent interact||`` block from the ``||agent:AGENT||`` category makes the ``||agent:agent interact||`` with levers.
+The ``||agent:agent interact||`` block from the ``||agent:AGENT||`` category makes the agent interact with mechanisms like levers, buttons, doors, gates, and more.
 
-From the ``||agent:AGENT||`` category drag an ``||agent:agent interact||`` underneath the ``||agent:agent move||`` block inside the **interact** ``||player:on chat command||``
+From the ``||agent:AGENT||`` category drag an ``||agent:agent interact||`` block underneath the ``||agent:agent move||`` block inside the **interact** ``||player:on chat command||``
 
 #### ~ tutorialhint
 
@@ -33,7 +33,7 @@ player.onChat("interact", function () {
 
 ### Review
 
-Send the command **interact** in the Minecraft chat to run the code in the **interact** ``||player:chat command||``.
+Press the green Play button to load this new chat command into your agent. Send the command **interact** in the Minecraft chat to run the code in the **interact** ``||player:chat command||``.
 
 #### ~ tutorialhint
 

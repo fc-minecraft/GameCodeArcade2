@@ -20,7 +20,7 @@ The agent places blocks from its first inventory slot by default, so use ``||age
 
 The drop-down menu in ``||agent:agent set block or item||`` is rather large, so finding a specific Minecraft block can be challenging.
 
-In the drop-down menu, search for **redstone** to quickly find **Block of Redstone**.
+In the drop-down menu, search for **redstone** to quickly find and select **Block of Redstone**.
 
 #### ~ tutorialhint
 
@@ -36,15 +36,6 @@ The second step, after putting a block in the agent's inventory, is to make the 
 
 Drag an ``||agent:agent place||`` block from the ``||agent:AGENT||`` category and attach it to the bottom of ``||agent:agent set block or item||``.  Then run the **place** ``||player:chat command||``.
 
-#### ~ tutorialhint
-
-Event blocks can hold multiple statement blocks so that multiple actions can run in sequence.
-
-### Review
-
-The agent can perform multiple actions in a row in the order that they appear in the event block.
-
-**Statement blocks** are shaped so that they can be placed one after the other to form a sequence of actions.
 
 #### ~ tutorialhint
 

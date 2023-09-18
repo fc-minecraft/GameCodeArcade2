@@ -57,11 +57,9 @@ player.onChat("clean", function () {
 
 ### Review
 
-Repeat loops run a sequence of statements a certain number of times.
+Repeat loops run a sequence of statements a certain number of times. Loops can greatly reduce the amount of code to write to solve a problem.
 
-Loops can greatly reduce the amount of code to write to solve a problem.
-
-Don't forget to send the chat command **clean** to run the code.
+Don't forget to press Play and then type **clean** in the chat to run the code.
 
 #### ~ tutorialhint
 

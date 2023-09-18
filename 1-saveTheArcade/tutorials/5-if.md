@@ -28,19 +28,26 @@ player.onChat("fix", function () {
     for (let index = 0; index < 12; index++) {
         if (agent.detect(AgentDetection.Block, FORWARD)) {
         }
-        agent.move(FORWARD, 1)
     }
 })
 ```
 ### Determining the condition
 
-The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
-
+Based on the direction the agent is facing, the ``||agent:agent detect||`` block should be set to check to the agent’s right from the dropdown. The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
 Be sure to specify the correct direction in the ``||agent:agent detect||`` block. Also, the ``||loops:repeat||`` block is already set to run the correct number of times.
 
 #### ~ tutorialhint
 
-If there is a block, then ``||agent:agent detect||`` returns a value of **true**.  Items that the agent can walk through (such as torches, buttons, and levers) cause ``||agent:agent detect||`` to return a value of **false**.
+```blocks
+player.onChat("fix", function () {
+    for (let index = 0; index < 12; index++) {
+        if (agent.detect(AgentDetection.Block, RIGHT)) {
+           
+        }
+        
+    }
+})
+```
 
 ### If true...
 
@@ -60,9 +67,9 @@ player.onChat("fix", function () {
 })
 ```
 
-### Review
+### Run your code
 
-Some problems can be simplified by using an ``||logic:if||`` block to run certain sections of code based on a condition.
+Press the green **Play** button to run the code. Then type **fix** in chat to have your agent complete the task.
 
 Code with a condition can determine whether a specific section of code will run, which eliminates the need for manually coding every single step.
 

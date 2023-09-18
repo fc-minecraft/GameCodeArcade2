@@ -8,7 +8,7 @@
 
 ### Conditional looping
 
-For some problems involving a loop, a ``||loops:repeat block||`` is not the best option. We may need to check to determine whether or not the code should repeat again before continuing. 
+For some problems involving a loop, a ``||loops:repeat block||`` is not the best option. We may need to run the code until a certain condition is met. 
 
 A ``||loops:while||`` block is another type of loop that uses a condition to determine whether it should repeatedly loop through its code.
 
@@ -18,8 +18,7 @@ A ``||loops:while||`` block runs its code while the condition is true.  After ru
 
 ### Agent inspect
 
-The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is the type of Minecraft block next to the agent.
-Value blocks fit in the rounded bubbles of other code blocks where a value is expected, such as the drop-down menu in ``||agent:agent set block or item||``.
+The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is the type of Minecraft block next to the agent. Value blocks fit in the rounded bubbles of other code blocks where a value is expected.Notice that ``||agent:agent inspect||`` is in the rounded bubble of the ``||agent:agent set block or item||`` block.
 
 #### ~ tutorialhint
 
@@ -32,14 +31,20 @@ Try to use a ``||logic:comparison||`` block to make a condition for the ``||loop
 
 #### ~ tutorialhint
 
-Use a ``||blocks:block value||`` from the ``||blocks:BLOCKS||`` category to complete the comparison.
+```blocks
+player.onChat("copy", function () {
+    while (agent.inspect(AgentInspection.Block, DOWN) == COBBLESTONE) {
+        agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
+        agent.place(LEFT)
+        agent.move(FORWARD, 1)
+    }
+})
+```
 
 ### Review
 
-A ``||loops:while||`` block uses a condition to determine whether it should continue to loop through its code.
-``||loops:While||`` loops are useful when the number of times to repeat is unclear but a condition for repeating is apparent.
-
-``||logic:Comparison||`` blocks can compare two values to create a condition.
+A ``||loops:while||`` block uses a condition to determine whether it should continue to loop through its code. ``||loops:While||`` loops are useful when the number of times to repeat is unclear but a condition for repeating is apparent. ``||logic:Comparison||`` blocks can compare two values to create a condition.
+Don't forget to run your code and type **copy** in the chat.
 
 #### ~ tutorialhint
 
