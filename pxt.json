@@ -1,5 +1,5 @@
 {
-    "name": "Code Quest",
+    "name": "GameCode",
     "version": "8.0.2",
     "dependencies": {
         "core": "*",
