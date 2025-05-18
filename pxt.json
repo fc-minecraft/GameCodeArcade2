@@ -17,7 +17,7 @@
         "1-saveTheArcade/tutorials/0-close.md"
     ],
     "targetVersions": {
-        "target": "1.6.8",
+        "target": "2.0.30",
         "targetId": "minecraft"
     },
     "supportedTargets": [
