@@ -3,34 +3,34 @@
 ### @explicitHints 1
 
 ### @activities true
+## Первое задание
 
-## First Activity
+### События
 
-### Events
+Блок "при старте" — это блок события. Блок события выполняет свой код, когда происходит что-то особенное.
 
-The ``||loops:on start||`` block is an **event block**.  An event block runs its code when a certain event occurs.
-
-For the ``||loops:on start||`` block, pressing the Play button is the event that triggers this event block.
-
-#### ~ tutorialhint
-
-The shape of an **event block** allows other code blocks to fit inside it.
-
-### Statements
-
-The ``||player:say||`` block is a **statement block**.  A statement block performs an action.
-
-The text in the ``||player:say||`` block says "Hello, Agent." Press the Play button to run the code and display the text in chat.
+Для блока "при старте" нажатие кнопки "Воспроизвести" — это то особенное, что запускает этот блок.
 
 #### ~ tutorialhint
 
-The shape of a **statement block** allows it to fit inside an event block.
+Блок события выглядит так, что другие блоки кода могут помещаться внутрь него.
 
-### Review
+### Действия
 
-With the ``||player:say||`` block inside the ``||loops:on start||`` block, pressing the Play button sends a message in the Minecraft chat.
+Блок "сказать" — это блок действия. Блок действия делает что-то.
+
+Текст в блоке "сказать" говорит "Привет, Агент." Нажми кнопку "Воспроизвести", чтобы запустить код и показать текст в чате.
 
 #### ~ tutorialhint
+
+Блок действия выглядит так, что он может помещаться внутрь блока события.
+
+### Итог
+
+Когда блок "сказать" находится внутри блока "при старте", нажатие кнопки "Воспроизвести" отправляет сообщение в чат Minecraft.
+
+#### ~ tutorialhint
+
 
 ```blocks
 player.say("Hello, Agent.")

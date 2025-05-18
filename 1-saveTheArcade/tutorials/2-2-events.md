@@ -4,13 +4,13 @@
 
 ### @activities true
 
-## First Activity
+## Первое задание
 
-### Agent destroy
+### Разрушение агента
 
-Open the ``||agent:AGENT||`` category and drag an ``||agent:agent destroy||`` block into the ``||player:on chat command||`` block named **destroy**.
+Открой категорию "АГЕНТ" и перетащи блок "агент разрушить" в блок "при команде в чате" с названием **разрушить**.
 
-Try to have the agent destroy a block in its path. Send the command **destroy** in the Minecraft chat to run the code in the **destroy** ``||player:on chat command||``.
+Попробуй заставить агента разрушить блок на его пути. Отправь команду **разрушить** в чат Minecraft, чтобы запустить код в блоке "при команде в чате" с названием **разрушить**.
 
 
 #### ~ tutorialhint

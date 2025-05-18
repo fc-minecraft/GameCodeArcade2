@@ -4,30 +4,30 @@
 
 ### @activities true
 
-## First Activity
+## Первое задание
 
-### Conditional looping
+### Условные циклы
 
-For some problems involving a loop, a ``||loops:repeat block||`` is not the best option. We may need to run the code until a certain condition is met. 
+Для некоторых задач, связанных с циклом, блок повторения не является лучшим вариантом. Нам может понадобиться выполнять код до тех пор, пока не будет выполнено определённое условие.
 
-A ``||loops:while||`` block is another type of loop that uses a condition to determine whether it should repeatedly loop through its code.
-
-#### ~ tutorialhint
-
-A ``||loops:while||`` block runs its code while the condition is true.  After running the code inside, the ``||loops:while||`` block checks the condition once more to determine whether to run its code again.  The ``||loops:while||`` loop terminates when the condition is false.
-
-### Agent inspect
-
-The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is the type of Minecraft block next to the agent. Value blocks fit in the rounded bubbles of other code blocks where a value is expected.Notice that ``||agent:agent inspect||`` is in the rounded bubble of the ``||agent:agent set block or item||`` block.
+Блок пока — это другой тип цикла, который использует условие, чтобы определить, нужно ли повторно выполнять его код.
 
 #### ~ tutorialhint
 
-The placement of ``||agent:agent inspect||`` in ``||agent:agent set block or item||`` puts whatever block is to the agent's right in the agent's inventory.
+Блок пока выполняет свой код, пока условие истинно. После выполнения кода внутри, блок пока проверяет условие ещё раз, чтобы определить, нужно ли снова выполнять его код. Цикл пока завершается, когда условие становится ложным.
 
-### Comparing values
+### Осмотр агента
 
-The ``||logic:LOGIC||`` category has a condition block that allows for the ``||logic:comparison||`` of two values.  With the **equal sign (=)** selected, the ``||logic:comparison||`` block returns true if the two values are the same.
-Try to use a ``||logic:comparison||`` block to make a condition for the ``||loops:while||`` block.  The agent needs to continue its task ``||loops:while||`` ``||agent:agent inspect||`` **down** is equal to **cobblestone**.
+Блок агент осмотреть — это блок значения. Блоки значения имеют отличную округлую форму и предоставляют информацию, которая называется значением. Информация, возвращаемая блоком агент осмотреть, — это тип блока Minecraft рядом с агентом. Блоки значения подходят в округлые пузыри других блоков кода, где ожидается значение. Обрати внимание, что блок агент осмотреть находится в округлом пузыре блока агент установить блок или предмет.
+
+#### ~ tutorialhint
+
+Размещение блока агент осмотреть в блоке агент установить блок или предмет помещает любой блок, который находится справа от агента, в инвентарь агента.
+
+### Сравнение значений
+
+Категория логика имеет блок условия, который позволяет сравнивать два значения. С выбранным знаком равенства (=), блок сравнения возвращает истинно, если два значения одинаковы.
+Попробуй использовать блок сравнения, чтобы создать условие для блока пока. Агенту нужно продолжать свою задачу пока блок агент осмотреть вниз равен булыжнику.
 
 #### ~ tutorialhint
 
@@ -41,10 +41,11 @@ player.onChat("copy", function () {
 })
 ```
 
-### Review
+### Обзор
 
-A ``||loops:while||`` block uses a condition to determine whether it should continue to loop through its code. ``||loops:While||`` loops are useful when the number of times to repeat is unclear but a condition for repeating is apparent. ``||logic:Comparison||`` blocks can compare two values to create a condition.
-Don't forget to run your code and type **copy** in the chat.
+Блок пока использует условие, чтобы определить, нужно ли продолжать выполнять его код. Циклы пока полезны, когда количество повторений неясно, но условие для повторения очевидно. Блоки сравнения могут сравнивать два значения, чтобы создать условие.
+Не забудь запустить свой код и ввести команду в чат.
+
 
 #### ~ tutorialhint
 

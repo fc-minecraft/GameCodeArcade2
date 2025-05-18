@@ -4,23 +4,23 @@
 
 ### @activities true
 
-## First Activity
+## Первое задание
 
-### Sequencing
+### Последовательность
 
-Multiple actions within an ``||player:on chat command||`` can be used to make the agent do different things in sequence. The agent has several different capabilities, which can be customized via the drop-down menu.
+Несколько действий внутри блока "при команде в чате" могут быть использованы, чтобы заставить агента выполнять разные действия последовательно. У агента есть несколько различных возможностей, которые можно настроить через выпадающее меню.
 
-We already have an ``||player:on chat command||`` named **interact** with an ``||agent:agent move||`` block inside, but we also need the agent to interact with the lever. 
+У нас уже есть блок "при команде в чате" с названием **взаимодействовать**, внутри которого находится блок "агент переместиться", но нам также нужно, чтобы агент взаимодействовал с рычагом.
 
 #### ~ tutorialhint
 
-Press **next** to continue tutorial
+Нажми **далее**, чтобы продолжить обучение.
 
-### Agent interact
+### Взаимодействие агента
 
-The ``||agent:agent interact||`` block from the ``||agent:AGENT||`` category makes the agent interact with mechanisms like levers, buttons, doors, gates, and more.
+Блок "агент взаимодействовать" из категории "АГЕНТ" заставляет агента взаимодействовать с механизмами, такими как рычаги, кнопки, двери, ворота и другие.
 
-From the ``||agent:AGENT||`` category drag an ``||agent:agent interact||`` block underneath the ``||agent:agent move||`` block inside the **interact** ``||player:on chat command||``
+Из категории "АГЕНТ" перетащи блок "агент взаимодействовать" под блок "агент переместиться" внутри блока "при команде в чате" с названием **взаимодействовать**.
 
 #### ~ tutorialhint
 
@@ -31,9 +31,9 @@ player.onChat("interact", function () {
 })
 ```
 
-### Review
+### Обзор
 
-Press the green Play button to load this new chat command into your agent. Send the command **interact** in the Minecraft chat to run the code in the **interact** ``||player:chat command||``.
+Нажми зелёную кнопку Воспроизведения, чтобы загрузить эту новую команду чата в твоего агента. Отправь команду **взаимодействовать** в чат Minecraft, чтобы запустить код в блоке "при команде в чате" с названием **взаимодействовать**.
 
 #### ~ tutorialhint
 

@@ -4,14 +4,15 @@
 
 ### @activities true
 
-## First Activity
+## Первое задание
 
-### Chat commands
+### Команды чата
 
-The ``||player:on chat command||`` event block runs its code when a specific message is sent via the Minecraft chat window. Try to make the ``||agent:agent move forward||`` one block by sending the message **move** in chat.
-Press the green play button to run your code. Then press **T** (or tap the Chat icon) to open the Minecraft chat window and type **move** in chat.
+Блок события "при команде чата" выполняет свой код, когда определённое сообщение отправлено через окно чата Minecraft. Попробуй заставить агента переместиться вперёд на один блок, отправив сообщение **двигаться** в чат.
+Нажми зелёную кнопку воспроизведения, чтобы запустить свой код. Затем нажми **T** (или коснись иконки чата), чтобы открыть окно чата Minecraft и введи **двигаться** в чат.
 
 #### ~ tutorialhint
+
 
 ```blocks
 player.onChat("move", function () {

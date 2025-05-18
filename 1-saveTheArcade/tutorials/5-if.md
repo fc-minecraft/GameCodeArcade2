@@ -3,23 +3,23 @@
 ### @explicitHints 1
 
 ### @activities true
+## Первое задание
 
-## First Activity
+### Принятие решений
 
-### Making decisions
-
-Some problems involve performing actions over and over, but other actions are not necessarily repeated consistently.  An ``||logic:if||`` block can simplify code by determining when it is appropriate to perform a certain action.
-An ``||logic:if||`` block is another type of **compound statement block**.  It uses a **condition** to determine whether to run its code.  If the condition is true, then the code inside the ``||logic:if||`` block will run.
+Некоторые задачи требуют выполнения действий снова и снова, но другие действия не обязательно повторяются последовательно. Блок если может упростить код, определяя, когда следует выполнять определённое действие.
+Блок если — это ещё один тип составного блока оператора. Он использует условие, чтобы определить, нужно ли выполнять его код. Если условие истинно, то код внутри блока если выполнится.
 
 #### ~ tutorialhint
 
-A **condition** can be true or false.  **Condition blocks** have a distinct pointed shape to indicate that they fit where a condition is expected.
+Условие может быть истинным или ложным. Блоки условий имеют отличную заострённую форму, чтобы указать, что они подходят туда, где ожидается условие.
 
-### Agent detect
+### Обнаружение агента
 
-Try using an ``||logic:if||`` block and an ``||agent:agent detect||`` block to make the ``||agent:agent destroy||`` only solid blocks.
-From the ``||logic:LOGIC||`` category drag an ``||logic:if||`` block inside the ``||loops:repeat||`` block.
-From the ``||agent:AGENT||`` category drag an ``||agent:agent detect||`` block and place it where it fits inside the ``||logic:if||`` block.
+Попробуй использовать блок если и блок агент обнаружить, чтобы заставить агента разрушать только твёрдые блоки.
+Из категории логика перетащи блок если внутрь блока повторения.
+Из категории АГЕНТ перетащи блок агент обнаружить и помести его туда, где он подходит внутри блока если.
+
 
 #### ~ tutorialhint
 
@@ -31,10 +31,11 @@ player.onChat("fix", function () {
     }
 })
 ```
-### Determining the condition
+### Определение условия
 
-Based on the direction the agent is facing, the ``||agent:agent detect||`` block should be set to check to the agent’s right from the dropdown. The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
-Be sure to specify the correct direction in the ``||agent:agent detect||`` block. Also, the ``||loops:repeat||`` block is already set to run the correct number of times.
+На основе направления, в котором смотрит агент, блок агент обнаружить должен быть установлен для проверки справа от агента в выпадающем меню. Блок агент обнаружить может определить, есть ли твёрдый блок рядом с агентом.
+Убедись, что указано правильное направление в блоке агент обнаружить. Также блок повторения уже установлен на выполнение правильного количества раз.
+
 
 #### ~ tutorialhint
 
@@ -49,10 +50,11 @@ player.onChat("fix", function () {
 })
 ```
 
-### If true...
+### Если истинно...
 
-If the agent does ``||agent:agent detect||``  a block to the right, we want the agent to ``||agent:agent destroy||``  the block. Inside the ``||logic:if||`` block, add ``||agent:agent destroy||`` **right**.
-Whether or not the agent **detects** a block to destroy, when it is complete, we need it to move forward. Let's add an ``||agent:agent move||`` **forward** after the ``||logic:if||`` block.
+Если агент обнаруживает блок справа, мы хотим, чтобы агент разрушил блок. Внутри блока если добавь агент разрушить вправо.
+Независимо от того, обнаруживает ли агент блок для разрушения, когда это будет завершено, нам нужно, чтобы он переместился вперёд. Давай добавим агент переместиться вперёд после блока если.
+
 
 #### ~ tutorialhint
 
@@ -67,11 +69,12 @@ player.onChat("fix", function () {
 })
 ```
 
-### Run your code
+### Запуск кода
 
-Press the green **Play** button to run the code. Then type **fix** in chat to have your agent complete the task.
+Нажми зелёную кнопку Воспроизвести, чтобы запустить код. Затем введи исправить в чат, чтобы агент выполнил задачу.
 
-Code with a condition can determine whether a specific section of code will run, which eliminates the need for manually coding every single step.
+Код с условием может определить, будет ли выполняться определённый участок кода, что устраняет необходимость вручную программировать каждый шаг.
+
 
 #### ~ tutorialhint
 

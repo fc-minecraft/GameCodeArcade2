@@ -4,15 +4,16 @@
 
 ### @activities true
 
-## Close to Continue
+## Закрой, чтобы продолжить
 
-### Close to Continue
+### Закрой, чтобы продолжить
 
-Close this Make Code window to continue with the tutorial. 
+Закрой это окно, чтобы продолжить обучение. 
 
 #### ~ tutorialhint
 
-Press the (X) button on the MakeCode window to continue. 
+Нажми кнопку (X) в окне MakeCode, чтобы продолжить. 
+
 
 ```blocks
 player.say("")

@@ -3,24 +3,23 @@
 ### @explicitHints 1
 
 ### @activities true
+## Первое задание
 
-## First Activity
+### Размещение блоков
 
-### Placing blocks
+Агент способен размещать блоки Minecraft, но это многоступенчатый процесс. Прежде чем агент сможет разместить блок Minecraft, у агента должен быть блок в его инвентаре.
 
-The agent is capable of placing Minecraft blocks, but doing so is a multi-step process.  Before the agent can place a Minecraft block, the agent needs to have a block in its inventory.
-
-The first step is to use ``||agent:agent set block or item||`` to put a block in the agent's inventory.
+Первый шаг — использовать "агент установить блок или предмет", чтобы положить блок в инвентарь агента.
 
 #### ~ tutorialhint
 
-The agent places blocks from its first inventory slot by default, so use ``||agent:agent set block or item||`` to set a block in slot **1** of the agent's inventory.
+Агент размещает блоки из первого слота инвентаря по умолчанию, поэтому используй "агент установить блок или предмет", чтобы установить блок в слот **1** инвентаря агента.
 
-### Searching by block name
+### Поиск по названию блока
 
-The drop-down menu in ``||agent:agent set block or item||`` is rather large, so finding a specific Minecraft block can be challenging.
+Выпадающее меню в "агент установить блок или предмет" довольно большое, поэтому найти конкретный блок Minecraft может быть сложно.
 
-In the drop-down menu, search for **redstone** to quickly find and select **Block of Redstone**.
+В выпадающем меню найди **редстоун**, чтобы быстро найти и выбрать **Блок редстоуна**.
 
 #### ~ tutorialhint
 
@@ -30,12 +29,13 @@ player.onChat("place", function () {
 })
 ```
 
-### Consecutive statements
+## Первое задание
 
-The second step, after putting a block in the agent's inventory, is to make the ``||agent:agent place||`` the block.
+### Последовательные операторы
 
-Drag an ``||agent:agent place||`` block from the ``||agent:AGENT||`` category and attach it to the bottom of ``||agent:agent set block or item||``.  Then run the **place** ``||player:chat command||``.
+Второй шаг, после того как блок помещён в инвентарь агента, — заставить агента разместить блок.
 
+Перетащи блок агент разместить из категории АГЕНТ и присоедини его к нижней части блока агент установить блок или предмет. Затем запусти команду чата разместить.
 
 #### ~ tutorialhint
 

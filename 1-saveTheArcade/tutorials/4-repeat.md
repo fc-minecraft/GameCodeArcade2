@@ -4,16 +4,17 @@
 
 ### @activities true
 
-## First Activity
+## Первое задание
 
-### Patterns
+### Повторение действий
 
-Some problems involve performing a certain set of actions over and over.  A **repeat loop** can simplify the solution by eliminating the need to rewrite the same code multiple times.
-A ``||loops:repeat||`` block is a **compound statement block**.  A compound statement block can fit anywhere a statement block fits, but also has an inner section where more statement blocks can be added.
+Иногда нужно выполнять одни и те же действия много раз подряд. Для этого можно использовать цикл повторения. Это помогает не писать один и тот же код снова и снова.
+
+Блок повторения — это специальный блок, который может содержать другие блоки внутри себя. Он выполняет эти блоки несколько раз.
 
 #### ~ tutorialhint
 
-A ``||loops:repeat||`` block fits inside an event block but needs statement blocks inside it.
+Блок повторения помещается внутри блока события, но ему нужны другие блоки внутри, чтобы знать, что именно повторять.
 
 ```blocks
 player.onChat("clean", function () {
@@ -23,11 +24,13 @@ player.onChat("clean", function () {
 })
 ```
 
-### Repeating a sequence
+## Первое задание
 
-Drag a ``||loops:repeat||`` block from the ``||loops:LOOPS||`` category into the ``||player:chat command||`` and place the existing ``||agent:agent destroy||`` and ``||agent:agent move||`` code blocks inside it.
+### Повторение последовательности
 
-A ``||loops:repeat||`` block is a type of **loop** because it loops through the same section of code multiple times.
+Перетащи блок повторения из категории циклы в команду чата и помести существующие блоки агент разрушить и агент переместиться внутрь него.
+
+Блок повторения — это тип цикла, потому что он повторяет один и тот же участок кода несколько раз.
 
 #### ~ tutorialhint
 
@@ -40,9 +43,10 @@ player.onChat("clean", function () {
 })
 ```
 
-### Loop Counting
+### Счётчик циклов
 
-We need to specify how many times we want the ``||loops:repeat||`` block to run. By default it is set to 4 times, but the agent has 12 spaces to clean. We can change the **4** value to a **12** inside the ``||loops:repeat||`` block.
+Нам нужно указать, сколько раз мы хотим, чтобы блок повторения выполнялся. Изначально он установлен на 4 раза, но агенту нужно очистить 12 пространств. Мы можем изменить значение 4 на 12 внутри блока повторения.
+
 
 #### ~ tutorialhint
 
@@ -55,11 +59,11 @@ player.onChat("clean", function () {
 })
 ```
 
-### Review
+### Обзор
 
-Repeat loops run a sequence of statements a certain number of times. Loops can greatly reduce the amount of code to write to solve a problem.
+Циклы повторения выполняют последовательность операторов определённое количество раз. Циклы могут значительно уменьшить количество кода, необходимого для решения задачи.
 
-Don't forget to press Play and then type **clean** in the chat to run the code.
+Не забудь нажать Воспроизвести и затем ввести очистить в чат, чтобы запустить код.
 
 #### ~ tutorialhint
 
