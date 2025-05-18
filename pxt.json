@@ -14,7 +14,8 @@
         "1-saveTheArcade/tutorials/4-repeat.md",
         "1-saveTheArcade/tutorials/5-if.md",
         "1-saveTheArcade/tutorials/6-while.md",
-        "1-saveTheArcade/tutorials/0-close.md"
+        "1-saveTheArcade/tutorials/0-close.md",
+        "tutorial-info-cache.json"
     ],
     "targetVersions": {
         "target": "2.0.30",
